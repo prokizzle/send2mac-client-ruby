@@ -1,0 +1,4 @@
+require_relative '../lib/runner.rb'
+
+app = Send2MacClient::Runner.new
+app.run
