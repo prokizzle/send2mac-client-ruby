@@ -6,6 +6,6 @@ config_path = "#{ENV['HOME']}/.send2mac"
 app = Send2MacClient::Runner.new
 File.file?(config_path) ? true : app.setup_api_key
 
-Daemons.run_proc('runner.rb') do
+Daemons.run_proc('send2mac') do
   app.run
 end
