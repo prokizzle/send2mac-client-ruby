@@ -1,4 +1,9 @@
-require_relative '../lib/runner.rb'
-
+require_relative '../lib/send2mac.rb'
+require 'daemons'
+config_path = "#{ENV['HOME']}/.send2mac"
 app = Send2MacClient::Runner.new
-app.run
+File.file?(config_path) ? true : app.setup_api_key
+
+Daemons.run_proc('runner.rb') do
+  app.run
+end
