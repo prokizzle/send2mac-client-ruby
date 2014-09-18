@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files`.split($/)
   spec.require_paths    = ["lib"]
   spec.bindir = 'bin'
-  spec.executables << 'send2mac'
+  spec.executables << 'send2mac-client'
 
   spec.add_dependency "launchy", "~> 2.3"
   spec.add_dependency "mechanize", "~> 2.7"
