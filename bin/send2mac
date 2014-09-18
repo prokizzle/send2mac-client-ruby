@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require_relative '../lib/send2mac.rb'
 require 'daemons'
 config_path = "#{ENV['HOME']}/.send2mac"
