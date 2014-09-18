@@ -1,3 +1,3 @@
 module Send2MacClient
-  VERSION = "0.9"
+  VERSION = "0.9.1"
 end
