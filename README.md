@@ -4,12 +4,11 @@
 
 A simple [Send2Mac][0925-001] client written in Ruby. When links are received, it opens them in the default browser using [Launchy][0925-002]. 
 
-## Code Example
+## Usage
 
-    $ ruby bin/send2mac-client
-    $ Listening...
-    $ http://github.com/prokizzle/pinboard_tools
-    $ http://coffeegeek.com
+    $ send2mac start
+    $ send2mac restart
+    $ send2mac stop
 
 ## Motivation
 
@@ -17,9 +16,7 @@ The official Send2Mac client is written in AppleScript using a curl loop. I figu
 
 ## Installation
 
-Clone the project.
-Run `rake init` and enter your [Send2Mac API Key][0925-003]. 
-Run `ruby bin/send2mac-client` to start it.
+`gem install send3mac`
 
 ## License
 
